@@ -2,7 +2,7 @@
 
 Nama   : Lismala\
 NIM    : 21552011354\
-Kelas  : TIF RM 22 CID\
+Kelas  : TIF RM 22 CID
 
 ## Screenshoot Aplikasi
 
