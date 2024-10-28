@@ -1,6 +1,12 @@
-# tugas1_pm2
+# Tugas 1 - Pemrograman Mobile 2
 
-A new Flutter project.
+Nama   : Lismala
+NIM    : 21552011354
+Kelas  : TIF RM 22 CID
+
+## Screenshoot Aplikasi
+
+
 
 ## Getting Started
 
