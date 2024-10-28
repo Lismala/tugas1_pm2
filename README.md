@@ -1,12 +1,12 @@
 # Tugas 1 - Pemrograman Mobile 2
 
-Nama   : Lismala
-NIM    : 21552011354
-Kelas  : TIF RM 22 CID
+Nama   : Lismala\
+NIM    : 21552011354\
+Kelas  : TIF RM 22 CID\
 
 ## Screenshoot Aplikasi
 
-
+![SS Aplikasi](https://github.com/user-attachments/assets/efc589d4-ebf3-4762-8a06-35ebd3f80363)
 
 ## Getting Started
 
