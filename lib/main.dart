@@ -41,29 +41,34 @@ class LoginPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     FadeInUp(
                       duration: const Duration(milliseconds: 1000),
-                      child: const Text(
-                        "HELLO",
-                        style: TextStyle(color: Colors.white, fontSize: 40),
+                      child: const Icon(
+                        Icons.person,
+                        size: 50,
+                        color: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    FadeInUp(
+                      duration: const Duration(milliseconds: 1000),
+                      child: const Center(
+                        child: Text(
+                          "Masukkan Akun Anda!",
+                          style: TextStyle(color: Colors.white, fontSize: 30),
+                        ),
                       ),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
-                    FadeInUp(
-                      duration: const Duration(milliseconds: 1300),
-                      child: const Text(
-                        "Welcome Back!",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
-                      ),
-                    ),
                   ],
                 ),
               ),
-              const SizedBox(height: 20),
+              
               Container(
                 height: MediaQuery.of(context).size.height * 0.65,
                 decoration: const BoxDecoration(
@@ -78,7 +83,7 @@ class LoginPage extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       const SizedBox(
-                        height: 60,
+                        height: 40,
                       ),
                       FadeInUp(
                         duration: const Duration(milliseconds: 1400),
@@ -108,7 +113,7 @@ class LoginPage extends StatelessWidget {
                                 child: TextField(
                                   controller: _usernameController,
                                   decoration: const InputDecoration(
-                                    hintText: "Username",
+                                    hintText: "Nama Pengguna",
                                     hintStyle: TextStyle(color: Colors.grey),
                                     border: InputBorder.none,
                                   ),
@@ -127,7 +132,7 @@ class LoginPage extends StatelessWidget {
                                   controller: _passwordController,
                                   obscureText: true,
                                   decoration: const InputDecoration(
-                                    hintText: "Password",
+                                    hintText: "Kata Sandi",
                                     hintStyle: TextStyle(color: Colors.grey),
                                     border: InputBorder.none,
                                   ),
@@ -143,7 +148,7 @@ class LoginPage extends StatelessWidget {
                       FadeInUp(
                         duration: const Duration(milliseconds: 1500),
                         child: const Text(
-                          "Forgot Password?",
+                          "Lupa Kata Sandi?",
                           style: TextStyle(color: Colors.grey),
                         ),
                       ),
@@ -162,7 +167,7 @@ class LoginPage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const HomePage ()),
+                                    builder: (context) => const HomePage()),
                               );
                             } else {
                               ScaffoldMessenger.of(context).showSnackBar(
@@ -174,13 +179,13 @@ class LoginPage extends StatelessWidget {
                             }
                           },
                           height: 50,
-                          color: Colors.green[900],
+                          color: Colors.green[400],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50),
                           ),
                           child: const Center(
                             child: Text(
-                              "Login",
+                              "Masuk",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
